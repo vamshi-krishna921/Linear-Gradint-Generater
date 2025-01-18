@@ -15,6 +15,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+h1{
+    color: rgb(0, 0, 0);
+}
+h4{
+    color: rgb(121, 121, 121);
+    font-weight: 500;
+}
 #btns {
   display: flex;
   justify-content: center;
@@ -40,7 +47,7 @@ p {
   color: #ffffff;
 }
 #bcc{
-    width: 450px;
+    width: 23.44vw;
     padding: 1.5vw;
     color: rgb(219, 219, 219);
     font-size: 1.1vw;
@@ -49,4 +56,49 @@ p {
     backdrop-filter: blur(10px);
     background-color: #e8e8e815;
 
+}
+
+/** Responsive */
+
+@media (max-width:600px) {
+    h1{
+        font-size: 3vh;
+        color: white;
+    }
+    h4{
+        font-size: 1.4vh;
+        font-weight: 500;
+    }
+    #btns {
+        gap: 4vh; 
+        & button {
+          padding-block: 2.5vh;
+          padding-inline: 7vh;
+          border-radius: 50px;
+          font-size: 2vh; 
+          font-weight: 500;
+          border: none;
+          background-color: #006663;
+        }
+        & button:nth-child(1){
+          color: #fff;
+          background-color: #111111;
+        }
+      }
+      p {
+        font-size: 2vh; 
+        font-weight: 500;
+        color: #ffffff;
+      }
+      #bcc{
+          width: 80vw; 
+          padding: 3vh; 
+          color: rgb(219, 219, 219);
+          font-size: 2.1vh; 
+          font-weight: 200;
+          border-left: 3px solid #c0c0c0;
+          backdrop-filter: blur(10px);
+          background-color: #e8e8e815;
+      }
+      
 }
