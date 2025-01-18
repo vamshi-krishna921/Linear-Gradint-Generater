@@ -4,7 +4,6 @@ let bcc = document.getElementById("bcc");
 let body = document.querySelector("body");
 let color1 = "";
 let color2 = "#006663";
-
 btn1.addEventListener("click", () => {
   color1 = "#" + colorChange();
   bcc.innerText = `background-image: linear-gradient(to right bottom, ${color1}, ${color2});`;
